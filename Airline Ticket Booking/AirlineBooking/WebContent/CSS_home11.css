@@ -1,0 +1,114 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+:root{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+    --ima-background-image:  url(lightbackground.jpg);
+    --primary1-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-theme{
+    --primary-color: #edf2f2;
+    --secondary-color: #212121;
+    --primary1-color: rgba(255, 255, 255, 0.4);
+    --ima-background-image:  url(darkbackground.jpg);
+}
+
+body{
+    background-image: var(--ima-background-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0%;
+    /* background-image: url(lightbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.menu{
+    text-align: right;
+    height: 0px;
+    margin: 3% 1%;
+    position: relative;
+    padding: 10px;
+    
+}
+
+#icon{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 8px;
+    color: var(--primary-color);
+    /* color: #000106; */
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 20px;
+    position: relative;
+}
+/* body{
+    background-image: url(lightbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu{
+    text-align: right;
+    height: 0px;
+    margin: 3% 1%;
+    position: relative;
+    padding: 10px;
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 8px;
+    color: #000106;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid #000106;
+    border-radius: 20px;
+    position: relative;
+} */
+
+nav ul{
+    flex: 1;
+    text-align:right;
+}
+
+.login-home{
+    text-align: center;
+    background: var(--primary1-color);
+    border: 0;
+    border-radius: 5%;
+    width: 380px;
+    height: 340px;
+    margin: 10% auto;
+    position: relative;
+    padding: 20px;
+}
+
+.home{
+    margin-top: 5%;
+    color: whitesmoke;
+    font-size: 40px;
+    font-style: oblique;
+}
